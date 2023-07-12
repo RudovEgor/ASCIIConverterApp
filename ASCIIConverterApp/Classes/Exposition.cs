@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace ASCIIConverterApp
 {
     public static class Extensions
     {
         /// <summary>
-        /// переводим изображение в монохром
+        /// Переводим изображение в монохром
         /// </summary>
         public static void ToGrayscale(this Bitmap bitmap)
         {
