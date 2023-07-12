@@ -37,16 +37,8 @@ namespace ASCIIConverterApp
             Bitmap bitmap = null;
             if (openFileDialog.ShowDialog() != DialogResult.OK)
             {
-                try
-                {
                     Application.Exit();
                     Environment.Exit(0);
-                }
-                catch (Exception)
-                {
-                    Close();
-                }
-                
             }
             textBox1.Clear();
             bitmap = new Bitmap(openFileDialog.FileName);//передача пути к файлу в объект bitmap
